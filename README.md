@@ -1,9 +1,10 @@
-You need to install the node environment
-first Step
+##You need to install the node environment
+
+->first Step
 
 cnpm install
 
-next
+->next
 
 cnpm run build
 
