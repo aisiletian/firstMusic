@@ -1,12 +1,13 @@
 ## You need to install the node environment
 
-、、、 bash
+```
 # first Step
 
-cnpm install
+> cnpm install
 
 # next
 
-cnpm run build
+> cnpm run build
 
-node prod.dev.js
+> node prod.dev.js
+```
