@@ -1,10 +1,11 @@
-##You need to install the node environment
+## You need to install the node environment
 
-->first Step
+、、、 bash
+# first Step
 
 cnpm install
 
-->next
+# next
 
 cnpm run build
 
