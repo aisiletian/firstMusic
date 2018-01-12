@@ -44,7 +44,7 @@ export default {
           songName: songName,
           songId: songId,
           songMid: songMid,
-          audio: `http://ws.stream.qqmusic.qq.com/${songId}.m4a?fromtag=46`
+          audio: `http://ws.stream.qqmusic.qq.com/C100${songMid}.m4a?fromtag=46`
         })
       })
       this.setPlayerList(emptyArr)

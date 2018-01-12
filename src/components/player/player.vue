@@ -21,15 +21,7 @@
     <transition name='player-animation-wrapper'>
     <div class='player-container' v-if='playerFullScreen'>
       <ul class='player-bg' ref='bg'>
-        <li><img src='../../common/images/play_1.jpg'></li>
-        <li><img src='../../common/images/play_2.jpg'></li>
-        <li><img src='../../common/images/play_3.jpg'></li>
-        <li><img src='../../common/images/play_4.jpg'></li>
-        <li><img src='../../common/images/play_5.jpg'></li>
-        <li><img src='../../common/images/play_6.jpg'></li>
-        <li><img src='../../common/images/play_7.jpg'></li>
-        <li><img src='../../common/images/play_8.jpg'></li>
-        <li><img src='../../common/images/play_9.jpg'></li>
+        <li v-for='(item,index) in bgImgList'><img :src='item'></li>
       </ul>
       <div class='mask-bg'></div>
       <div class='lyric-wrapper'>
@@ -98,6 +90,17 @@ export default {
   },
   data () {
     return {
+      bgImgList: [
+        require('../../common/images/play_1.jpg'),
+        require('../../common/images/play_2.jpg'),
+        require('../../common/images/play_3.jpg'),
+        require('../../common/images/play_4.jpg'),
+        require('../../common/images/play_5.jpg'),
+        require('../../common/images/play_6.jpg'),
+        require('../../common/images/play_7.jpg'),
+        require('../../common/images/play_8.jpg'),
+        require('../../common/images/play_9.jpg')
+      ],
       bgCurrentIndex: 0,
       currentPageIndex: 0,
       audioSrc: '',
@@ -379,7 +382,7 @@ export default {
   display: block;
   position: absolute;
   z-index: 301;
-  background: url(../../common/images/bg.jpg) no-repeat 0 0;
+  background: #fff url(../../common/images/bg.jpg) no-repeat 0 0;
   background-size: cover;
   width: 100%;
   height: 100%;
